@@ -2,18 +2,20 @@
 
 
 
-# Read the input into an array
+# Read input from standard input
 
-readarray -t lines
+read input
 
 
 
-# Reverse the array
+# Reverse the input using the rev command
 
-for ((i=${#lines[@]}-1; i>=0; i--)); do
+output=$(echo "$input" | rev)
 
-    echo "${lines[i]}"
 
-done
+
+# Print the reversed input
+
+echo "$output"
 
 
