@@ -1,21 +1,2 @@
 #!/bin/bash
-
-
-
-# Read input from standard input
-
-read input
-
-
-
-# Reverse the input using the rev command
-
-output=$(echo "$input" | rev)
-
-
-
-# Print the reversed input
-
-echo "$output"
-
-
+rev
