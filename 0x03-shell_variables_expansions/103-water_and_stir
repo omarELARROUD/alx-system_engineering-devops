@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $((obase=bestchol ibase=water $WATER)+(obase=bestchol ibase=stir $STIR))
