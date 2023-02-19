@@ -1,2 +1,11 @@
 #!/bin/bash
-awk 'NR % 2' $1
+
+count=1
+while read line
+do
+    if [ $((count % 2)) -eq 0 ]
+    then
+        echo $line
+    fi
+    ((count++))
+done < $1
